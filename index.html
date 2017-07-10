@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+<title> Meghana Kanaji</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Eagle Lake' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Delius' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Monofett' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway Dots' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Rufina' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Fredericka the Great' rel='stylesheet'>
+	<script type="text/javascript" src="canvasjs.min.js"></script>
+	<script type="text/javascript" src="canvasjs.min.js"></script>
+	<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript">
+   window.onload = function () {
+	var ylabel = ["0","Beginner","Intermediate","Advanced","Expert"];
+	var counter = 0;
+	
+	var chart = new CanvasJS.Chart("chartContainer1",
+	{
+		animationEnabled: true,
+		theme: "theme4",
+		title: {
+			fontColor: "#48D1CC",
+			fontWeight: "bolder",
+			fontSize: "30",
+			fontFamily: "courier new",
+			text: "Languages",
+		},
+		
+		axisY: {
+			labelFontColor: "#708090",
+			labelFontSize: "12",
+			labelFontFamily: "Comic Sans MS",
+			labelFontWeight: "bold",
+			//labelFontStyle: "",
+			labelFormatter: function (e) {
+				var ycats = ylabel[counter ++];
+				if(counter == ylabel.length)
+					counter = 0;
+				return ycats;
+			},
+			includeZero: true
+		},
+		axisX: {
+		labelFontColor: "#708090",
+		labelFontSize: "12",
+			labelFontFamily: "Comic Sans MS",
+			labelFontWeight: "bold",
+		
+		},
+		dataPointWidth: 20 ,
+		data: [
+		{
+			
+			type: "column",
+			color: "#48D1CC",
+			
+			dataPoints: [
+				{ y: 7.9, label:"Python" },
+				
+				{y: 6, label:"C" },
+				
+				{ y: 6, label: "HTML" },
+				{ y: 6, label:"CSS" },
+				{ y: 4, label: "JavaScript" },
+				{y: 2, label:"PHP" },
+				
+				{ y: 2, label: "MySQL" },
+				
+
+								
+			]
+		}
+		]                       
+	});
+	chart.render();
+	
+var chart = new CanvasJS.Chart("chartContainer2",
+	{
+		animationEnabled: true,
+		theme: "theme4",
+		title: {
+			fontColor: "#48D1CC",
+			fontWeight: "bolder",
+			fontSize: "30",
+			fontFamily: "courier new",
+			text: "Softwares",
+		},
+		
+		axisY: {
+			labelFontColor: "#708090",
+			labelFontSize: "12",
+			labelFontFamily: "Comic Sans MS",
+			labelFontWeight: "bold",
+			//labelFontStyle: "",
+			labelFormatter: function (e) {
+				var ycats = ylabel[counter ++];
+				if(counter == ylabel.length)
+					counter = 0;
+				return ycats;
+			},
+			includeZero: true
+		},
+		axisX: {
+		labelFontColor: "#708090",
+		labelFontSize: "12",
+			labelFontFamily: "Comic Sans MS",
+			labelFontWeight: "bold",
+		
+		},
+		dataPointWidth: 20 ,
+		data: [
+		{
+			
+			type: "column",
+			color: "#48D1CC",
+			
+			dataPoints: [
+				{ y: 7.9, label:"Linux" },
+				{ y: 6, label: "Nmap" },
+				{y: 2, label:"aircrack-ng" },
+				{ y: 6, label:"Bootstrap" },
+				{ y: 4, label: "Django" },
+				{y: 6, label:"Hadoop" },
+				{ y: 2, label:"Scapy" },
+				{ y: 2, label: "Burp Suite" },
+			
+								
+			]
+		}
+		]                       
+	});
+	chart.render();
+	}
+	</script>
+
+</head>
+
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50" >
+<div class="navbar-wrapper">
+<div class="container-fluid">
+	<!-- Nav bar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" style="border-radius:0px; " >
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MYNAVBAR">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="logo" class="navbar-brand" href="#"  >Meghana Kanaji</a> 
+			</div>
+			
+			<div class="collapse navbar-collapse " id="MYNAVBAR"  >
+				<ul class="nav navbar-nav navbar-right" >
+					<li><a href="#myCarousel"><span class="glyphicon glyphicon-home"></span>  HOME</a></li>
+					<li><a href="#aboutme"><span class="glyphicon glyphicon-info-sign"></span>  ABOUT</a></li>
+					<li><a href="#education"><span class="glyphicon glyphicon-education"></span>  BACKGROUND</a></li>
+					<li><a href="#projects"><span class="glyphicon glyphicon-pencil">  WORK/PLAY </a></li>
+					<li><a href="#contacts"><span class="glyphicon glyphicon-user"></span>  CONTACT</a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</div>
+		
+		</div>
+	</nav>
+	</div>
+	</div>
+	<!-- xx Nav bar xx -->
+
+	<div id="myCarousel" class="carousel slide" data-ride="carousel" >
+		<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner" >
+			
+			<div class="item active" style="height:450px">
+			<img class="first-slide" src="yellow.jpg" alt="First slide" width="100%" >
+			<div class="container-fluid"  >
+			<div class="carousel-caption "  style="font-size:300px; font-family:Delius;">
+			<h2 class="maintext">Hello !</h2> <h6 class="maintext" style="font-size:20px">to know more about me click learn more<h6><br/>
+			<a href="#aboutme"><button class="button button1">Learn More</button></a>
+			</div>
+			</div>
+			</div>
+			
+			<div class="item " style="height:450px">
+			<img src="pink.jpg" alt="scene" style="width: 100% ;">
+			<div class="container-fluid"  >
+			<div class="carousel-caption" style="font-family:Delius; color: black">
+			<h2 class= "maintext">Bit and Bytes</h2><br/>
+			<a href="#education"><button class="button button1" >Resume</button></a>
+			</div>
+			</div>
+			
+			</div>
+			
+			<div class="item " style="height:450px">
+			<img src="blue.jpg" alt="cats" style="width:100% ;">
+			<div class="container-fluid"  >
+			
+			<div class="carousel-caption " style="font-family:Delius; color: black">
+			<h2 class="maintext">Know me more</h2><br/>
+			<a href="#funfacts1"><button class="button button1 " >Fun facts</button></a>
+			</div>
+			</div>
+			
+			</div>
+		
+		</div>
+	</div>
+	
+<div id="aboutme" class="container " >
+	<div class="row">
+		<div class="col-md-12 fancy" style="text-align:center; font-family: Delius "><br/><br/>
+		<h1>ABOUT ME</h1>
+		</div><!-- /.col-lg-4 -->
+	</div>
+	<div class="row">
+		<div class="col-md-3"></div>	
+		<div class="col-md-6" style="text-align:center">
+			<p style="font-family:Delius; font-size:20px">
+			<br/>Hey!! Glad you are here!<br/><br/> Let me introduce myself by saying that I am currently a graduate student pursuing Masters of Science in Computer Engineering 
+			with a specilization in Computer Networks and Security. <br/><br/>  I enjoy taking up new challenges and am perpetually wired in. In my normal days you will find me on my laptop 
+				probably learning different software programs. And in my free times you will find me in the nearest water-front sipping coffee and enjoying the beauty of the nature.
+			</p><br/><br/>
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+</div>
+	
+
+<div id="education"class="container">
+	<br/><br/>	
+	<h1>EDUCATION</h1>
+	<br/><br/><br/><br/>
+<div class="row">
+	<div class="col-md-3"></div>
+	<div class="col-md-3"><img src="nyulogo.jpg" style="width: 150px;"></div>
+	<div class="col-md-4" style="text-align:left;">
+	<h2><strong>New York University</strong></h2>
+	<h4 style="color:green;">Masters of Science, Computer Engineering (2016- 2018)</h4>
+	<p>I am an enrolled graduate student pursuing my specialization in Computer Networks and Security. </p>
+	
+	
+	</div>
+</div><br/><br/>
+<br/><br/>
+<div class="row">
+	<div class="col-md-3"></div>
+	<div class="col-md-3"><img src="mumlogo.png" style="width: 150px;"></div>
+	<div class="col-md-4" style="text-align:left;"><h2><strong>University of Mumbai</strong><h2>
+	<h4 style="color:green;">Bachelor of Engineering (2012-2018)</h4>
+	<p> Pursued my Undergraduate degree in the field of Electronics and Telecommunication Engineering. </p>
+	</div>
+</div>
+<br/><br/>
+<br/><br/>
+</div>
+
+
+<div class="container">
+<h1>SKILLS</h1>
+	<div class="row">
+	<div class="col-md-6">
+	
+	 <div id="chartContainer1" style="height: 300px; width: 80%;">
+  </div>
+  </div>
+  <div class="col-md-6">
+  <div id="chartContainer2" style="height: 300px; width: 80%;">
+  </div>
+	</div>
+	</div>
+</div>
+<div class="container">
+<br/><br/><h1>EXPERIENCE</h1>
+	<div class="row">
+	<div class="col-md-3"></div>
+	<div class="col-md-3"><img src="logos/IIT.png" style="width: 150px;"></div>
+	<div class="col-md-4" style="text-align:left;"><h2><strong>Technophilia, IIT Bombay</strong><h2>
+	<h4 style="color:green;">Summer Intern (May 2015- July 2015)</h4>
+	<p><ol> <li> 	Implemented programming of AVR microcontroller using Embedded C, interfaced different peripherals and I/O devices, learnt different protocols like UART, SPI, I2C and RC-5 upon AVR microcontroller . </li>
+	<li>	Built robots including a hand gesture controlled robot, robots controlled by TV remote control, mobile phones, acceleration sensors, sound sensors. Also, made an efficient algorithm for an Intelligent line follower robot using Raspberry Pi </li>
+	</ol></p>
+	</div>
+</div>
+<br/><br/>
+
+<div id="projects" class="container">
+<br/><br/><h1>PROJECTS</h1>
+	
+
+<div class="row">
+	<!--1-->
+	<div class="procolumn">
+    <div class="procard">
+        <div class="procontainer">
+			<h3 class="protitle">Automated Level and Label Detection</h3>
+			<p class="prosubtitle">Group Project: Aug 2015- May 2016</p>
+			<br/>
+			<p style="font-size:15px"><strong>Topic: </strong>Image Processing </p>
+			<p><strong>Skills used: </strong>Python, MATLAB, Flag-Sensors, Image Processing</p>
+			<div class="overlay">
+			<div class="protext"><ul> <h3 class="prodes">Automated Level and Label Detection</h3>
+			<li> Implemented the concept of 8-connectivity by coding it in MATLAB. </li>
+			<li>Achieved automation of the system by building a conveyor belt and syncing it with web-cam by coding the Raspberry-Pi in Python. </li>
+			<li>Succeeded in getting 45% more accurate result than standard CANNY method  </li>
+			</ul>
+			</div>
+			</div>
+		</div>
+    </div>
+	</div>
+	<!--2-->
+	<div class="procolumn">
+    <div class="procard">
+        <div class="procontainer">
+			<h3 class="protitle">Music Application</h3>
+			<br/>
+			<p class="prosubtitle">Individual Project: Ongoing</p>
+			<br/>
+			<p style="font-size:15px"><strong>Topic: </strong>Web Application </p>
+			<p><strong>Skills used:</strong> Python, Django, PHP, HTML, CSS, JS</p>
+			<div class="overlay">
+			<div class="protext"><ul> <h3 class="prodes">Music Application</h3>
+			<li> Creating a music application for the users to add, delete and bookmark there favourite songs in the playlist </li>
+			<li>Allows users to create there account and save the playlists</li>
+			<li>Using the python framework - Django, to create a web application </li>
+			</ul>
+			</div>
+			</div>
+		</div>
+    </div>
+	</div>
+	<!--3-->
+	<div class="procolumn">
+    <div class="procard">
+        <div class="procontainer">
+			<h3 class="protitle">Covert Channel</h3>
+			<br/>
+			<p class="prosubtitle">Individual Project: June 2017- July 2017</p>
+			<br/>
+			<p style="font-size:15px"><strong>Topic: </strong>Web Application </p>
+			<p><strong>Skills used:</strong> Python, Scapy, Kali Linux, Wireshark</p>
+			<div class="overlay">
+			<div class="protext"><ul> <h3 class="prodes">Covert Channel</h3>
+			<li>Covert Channel was implemented using TCP destination port field and in order to identify if the received packet is a covert message, the ECN flag is enabled.</li>
+			<li>The server program sends the packet such that the ECN flag enabled and the message is stored in the TCP destination field.</li>
+			</ul>
+			</div>
+			</div>
+		</div>
+    </div>
+	</div>
+	
+</div>
+
+<div class="row">
+<!--4-->
+	<div class="procolumn">
+    <div class="procard">
+        <div class="procontainer">
+			<h3 class="protitle">Reference Monitor</h3>
+			<p class="prosubtitle">Group Project: Aug 2015- May 2016</p>
+			<br/>
+			<p style="font-size:15px"><strong>Topic: </strong>Information Security </p>
+			<p><strong>Skills used: </strong>C, virtual machine, Adore Rootkit</p>
+			<div class="overlay">
+			<div class="protext"><ul> <h3 class="prodes">Reference Monitor</h3>
+			<li> Analyzed the working of refernce monitor and rootkit (Adore Rootkit) and the role of Virtual File Sytem in the operating system</li>
+			</ul>
+			</div>
+			</div>
+		</div>
+    </div>
+	</div>
+	<!--5-->
+	<div class="procolumn">
+    <div class="procard">
+        <div class="procontainer">
+			<h3 class="protitle">Secure Chat Room</h3>
+			<br/>
+			<p class="prosubtitle">Individual Project: Jul 2017- Ongoing</p>
+			<br/>
+			<p style="font-size:15px"><strong>Topic: </strong>Application Security </p>
+			<p><strong>Skills used:</strong> Python, Django, PHP, HTML, CSS, JS, Python crypto-library</p>
+			<div class="overlay">
+			<div class="protext"><ul> <h3 class="prodes">Secure Chat Room</h3>
+			<li> Inorder to implement the concepts of security that I have learned so far in my career, I decided to build a secure online chat room.</li>
+			<li>With the help Django I am developing the web application, which allows the client to communicate with the server.</li>
+			<li>Python's Crypto-library will be used to tranfer the messages by encrypting and decrypting it using double encryption.</li>
+			</ul>
+			</div>
+			</div>
+		</div>
+    </div>
+	</div>
+	<!--6-->
+	<div class="procolumn">
+    <div class="procard">
+        <div class="procontainer">
+			<h3 class="protitle">Website Profile</h3>
+			<br/>
+			<p class="prosubtitle">Individual Project: June2017- Ongoing</p>
+			<br/>
+			<p style="font-size:15px"><strong>Topic: </strong>Web Designing </p>
+			<p><strong>Skills used:</strong> Bootstrap, HTML, CSS, JS</p>
+			<div class="overlay">
+			<div class="protext"><ul> <h3 class="prodes">Website Profile</h3>
+			<li>This website is my 'personal creative space' that I have been working on and will continue to experiment on this website by adding and redeveloping elements. </li>
+			</ul>
+			</div>
+			</div>
+		</div>
+    </div>
+	</div>
+	
+</div>
+
+</div>
+
+
+
+<div id="funfacts1"class="container-fluid">
+<br/><br/>
+	<h1>FUN FACTS</h1>
+	<div class="row">
+	<div class="col-md-3"></div>
+	<div class="col-md-6">
+	<div id="funfacts" class="carousel slide" data-ride="carousel">
+		<ul class="carousel-indicators">
+			<li data-target="#funfacts" data-slide-to="0" class="active"></li>
+			<li data-target="#funfacts" data-slide-to="1"></li>
+			<li data-target="#funfacts" data-slide-to="2"></li>
+			<li data-target="#funfacts" data-slide-to="3"></li>
+			<li data-target="#funfacts" data-slide-to="4"></li>
+			<li data-target="#funfacts" data-slide-to="5"></li>
+			<li data-target="#funfacts" data-slide-to="6"></li>
+			<li data-target="#funfacts" data-slide-to="7"></li>
+			<li data-target="#funfacts" data-slide-to="8"></li>
+			<li data-target="#funfacts" data-slide-to="9"></li>
+			<li data-target="#funfacts" data-slide-to="10"></li>
+			<li data-target="#funfacts" data-slide-to="11"></li>
+			
+		</ul>
+		<div class="carousel-inner" style=" font-family:Delius;">
+			<div class="item active" >
+				<img class="first-slide" src="white.jpg" style="height:300px; width:100%">
+				<div class="container-fluid">
+					<div class="carousel-caption" style="color:black">
+						<img src="logos/badminton.png" style="height=128px;width:128px;"></br>
+						</br><h3 style="font-size:20px">I love to play Badminton</h3>
+					</div>
+				</div>
+			</div>	
+			<div class="item ">
+				<img  src="white.jpg" style="height:300px; width:100%">
+				<div class="container-fluid">
+					<div class="carousel-caption" style="color:black">
+						<img src="logos/android.png"  style="height=128px;width:128px;"></br>
+						</br><h3 style="font-size:20px">I love Android</h3>
+					</div>
+				</div>
+			</div>	
+			<div class="item ">
+				<img src="white.jpg" style="height:300px; width:100%">
+				<div class="container-fluid">
+					<div class="carousel-caption" style="color:black">
+						<img src="logos/animal.png"  style="height=128px;width:128px;"></br>
+						</br><h3 style="font-size:20px">I love animals </h3>
+					</div>
+				</div>
+			</div>
+			<div class="item ">
+				<img src="white.jpg" style="height:300px; width:100%">
+				<div class="container-fluid">
+					<div class="carousel-caption" style="color:black">
+						<img src="logos/big bang.jpg"  style="height=128px;width:128px;"></br>
+						</br><h3 style="font-size:20px">I love Big Bang Theory ''</h3>
+					</div>
+				</div>
+			</div>
+			<div class="item ">
+				<img src="white.jpg" style="height:300px; width:100%">
+				<div class="container-fluid">
+					<div class="carousel-caption" style="color:black">
+						<img src="logos/cake.png"  style="height=128px;width:128px;"></br>
+						</br><h3 style="font-size:20px">Baking makes me happy!</h3>
+					</div>
+				</div>
+			</div>
+			<div class="item ">
+				<img src="white.jpg" style="height:300px; width:100%">
+				<div class="container-fluid">
+					<div class="carousel-caption" style="color:black">
+						<img src="logos/food.png"  style="height=128px;width:128px;"></br>
+						</br><h3 style="font-size:20px">I am a big foodie !</h3>
+					</div>
+				</div>
+			</div>
+			<div class="item ">
+				<img src="white.jpg" style="height:300px; width:100%">
+				<div class="container-fluid">
+					<div class="carousel-caption" style="color:black">
+						<img src="logos/friends.jpg"  style="height=128px;width:128px;"></br>
+						</br><h3 style="font-size:20px"> Huge fan of the show F.R.I.E.N.D.S </h3>
+					</div>
+				</div>
+			</div>
+			<div class="item ">
+				<img src="white.jpg" style="height:300px; width:100%">
+				<div class="container-fluid">
+					<div class="carousel-caption" style="color:black">
+						<img src="logos/garden.png"  style="height=128px;width:128px;"></br>
+						</br><h3 style="font-size:20px">I like Gardening</h3>
+					</div>
+				</div>
+			</div>
+			<div class="item ">
+				<img src="white.jpg" style="height:300px; width:100%">
+				<div class="container-fluid">
+					<div class="carousel-caption" style="color:black">
+						<img src="logos/ice-cream.png"  style="height=128px;width:128px;"></br>
+						</br><h3 style="font-size:20px">Well ! who doesn't love ice-cream</h3>
+					</div>
+				</div>
+			</div>
+			<div class="item ">
+				<img src="white.jpg" style="height:300px; width:100%">
+				<div class="container-fluid">
+					<div class="carousel-caption" style="color:black">
+						<img src="logos/icon.png"  style="height=128px;width:128px;"></br>
+						</br><h3 style="font-size:20px">Python is literally my favourite language</h3>
+					</div>
+				</div>
+			</div>
+			<div class="item ">
+				<img src="white.jpg" style="height:300px; width:100%">
+				<div class="container-fluid">
+					<div class="carousel-caption" style="color:black">
+						<img src="logos/travel.png"  style="height=128px;width:128px;"></br>
+						</br><h3 style="font-size:20px"> I love traveling</h3>
+					</div>
+				</div>
+			</div>
+			<div class="item ">
+				<img src="white.jpg" style="height:300px; width:100%">
+				<div class="container-fluid">
+					<div class="carousel-caption" style="color:black">
+						<img src="logos/wonderwoman.jpg " style="height=128px;width:128px;"></br>
+						</br><h3 style="font-size:20px">You're Stronger than you believe - Wonder Woman</h3>
+					</div>
+				</div>
+			</div>
+			 <a  href="#funfacts" data-slide="prev" style="padding-left:220px">
+    <span class="glyphicon glyphicon-circle-arrow-left" style="font-size: 30px; color: grey;"></span>
+    
+  </a> 
+  <a href="#funfacts" data-slide="next"style="padding-left:50px">
+    <span class="glyphicon glyphicon-circle-arrow-right" style="font-size: 30px; color:grey;"></span>
+    
+  </a>
+		</div>
+		</div>
+	</div>
+	</div>
+</div>
+<br/><br/>
+    <!-- footer -->
+<div id="contacts"class="container-fluid">
+	<h1>CONTACT</h1>
+<br/>
+<div class="row">
+<div class="col-md-3"></div>
+<div class="col-md-6" style="padding-left:200px;text-align: centre; font-size:40px;">
+	<a href="https://www.facebook.com/meghana.kanaji.1" ><i class="fa fa-facebook-official" style="color:#595959"></i></a>
+	<a href="https://github.com/mbk1995"><i class="fa fa-github" style="color:#595959"></i></a>
+	<a href="https://www.instagram.com/meghana_kanaji/?hl=en"><i class="fa fa-instagram" style="color:#595959"></i></a>
+	<a href="https://www.linkedin.com/in/meghana-kanaji/"><i class="fa fa-linkedin"style="color:#595959"></i></a>
+</div>
+
+</div>
+<br/><br/>
+    <!-- Footer End  -->
+</body>
+</html>

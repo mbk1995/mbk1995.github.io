@@ -1,0 +1,198 @@
+/* style.css */
+@import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,900);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+@import url(https://fonts.googleapis.com/css?family=Fredericka the Great);
+@import url(https://fonts.googleapis.com/css?family=Delius);
+@import url(https://fonts.googleapis.com/css?family=Titillium Web);
+
+
+	.nav.navbar-nav li a {
+		 
+		 font-weight:300;
+	 } 
+	 
+ 
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+	
+	.logo{color:#b3b3b3;
+			font-family: Delius ;
+			font-size:32px;
+			font-weight:900;
+
+		} 
+	.logo:hover{font-family:Fredericka the Great; font-size:50px; text-decoration:none; color: #b3b3b3; font-weight:100;}
+	.bg{ 
+		background-image:url('blue.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.maintext {
+		color: #000000;
+		font-family: Rufina ;
+	  font-size: 50px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 4s;
+	transition: width 0.3s;
+	transition-timing-function: ease-in-out;
+
+	}
+	.maintext:hover {
+	color: black;
+  font-family: Fredericka the Great ;
+
+  font-size: 60px;
+	
+	}
+	
+	.button {
+    background-color:transparent;
+    border-radius: 15px;
+    color: white;
+    padding: 8px 8px;
+	font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.button1 {
+    background-color: transparent; 
+    color: black; 
+    border: 2px solid black;
+}
+
+.button1:hover {
+    background-color: black;
+    color: white; font-family: Fredericka the Great ;
+}
+h1 {
+ overflow: hidden;
+ text-align: center;
+ font-family: Delius;
+}
+h1:before,
+h1:after {
+ background-color: black;
+ content: "";
+ display: inline-block;
+ height: 3px;
+ position: relative;
+ vertical-align: middle;
+ width: 20%;
+}
+h1:before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+h1:after {
+ left: 0.5em;
+ margin-right: -50%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.procolumn {
+  float: left;
+  width: 33.33%;
+ 
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media (max-width: 650px) {
+  .procolumn {
+    width: 100%;
+    display: block;
+	height:300px;
+	}
+}
+
+.procard {
+height:300px;
+  box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.procontainer {
+	position:relative;
+  padding: 0 16px;
+}
+
+.procontainer::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.protitle {
+	padding-top: 50px;
+	font-size: 25px;
+	font-weight: bolder;
+}
+.prosubtitle {
+	
+	font-size: 15px;
+  color: green;
+}
+.prodes {
+	font-family: Calibri;
+	font-size: 25px;
+	font-weight: bolder;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #CCD6DD;
+}
+.procontainer:hover .overlay {
+  opacity: 1;
+}
+.protext {
+  color: black;
+  font-size: 15px;
+  font-family: Titillium Web;
+  position: absolute;
+  height:300px;
+  background-color: #CCD6DD;
+}
+#grad1 {
+    height: 200px;
+    background: red; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left top, red, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, red, yellow); /* Standard syntax (must be last) */
+}
+#grad2 {
+    height: 200px;
+    background: #00ffff; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left top, #00ffff, #3399ff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #00ffff, #3399ff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #00ffff, #3399ff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #00ffff, #3399ff); /* Standard syntax (must be last) */
+}
