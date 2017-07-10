@@ -181,18 +181,14 @@ height:300px;
   background-color: #CCD6DD;
 }
 #grad1 {
-    height: 200px;
-    background: red; /* For browsers that do not support gradients */    
-    background: -webkit-linear-gradient(left top, red, yellow); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, red, yellow); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, red, yellow); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, red, yellow); /* Standard syntax (must be last) */
+   
+    background: 	#ffc90d; /* For browsers that do not support gradients */    
+   
 }
 #grad2 {
-    height: 200px;
-    background: #00ffff; /* For browsers that do not support gradients */    
-    background: -webkit-linear-gradient(left top, #00ffff, #3399ff); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, #00ffff, #3399ff); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, #00ffff, #3399ff); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #00ffff, #3399ff); /* Standard syntax (must be last) */
+    
+    background: #ff73a0; /* For browsers that do not support gradients */    
+   
 }
+
+#grad3{background:#1be4de;}
